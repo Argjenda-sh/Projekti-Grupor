@@ -36,6 +36,7 @@ document.querySelectorAll('.rating-stars').forEach(starContainer => {
     });
 });
 
+<<<<<<< Updated upstream
 function searchBooks() {
     const searchQuery = document.getElementById("search-bar").value.toLowerCase();
     const books = document.querySelectorAll(".book-item");
@@ -86,3 +87,32 @@ function searchBooks() {
         }
     });
 }
+=======
+
+// JavaScript to handle modal behavior
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("book-modal");
+    const modalContent = document.getElementById("modal-book-content");
+    const closeBtn = document.querySelector(".close-btn");
+    const bookItems = document.querySelectorAll(".book-item");
+
+    bookItems.forEach((bookItem) => {
+        bookItem.addEventListener("click", () => {
+            const clonedBook = bookItem.cloneNode(true);
+            modalContent.innerHTML = "";
+            modalContent.appendChild(clonedBook);
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+>>>>>>> Stashed changes

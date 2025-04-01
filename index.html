@@ -30,46 +30,371 @@
             </label>
         </header>
 
-        <div class="book-list">
-            <!-- Book 1 -->
-            <div class="book-item">
-                <div class="book-header">
-                    <img src="img/book1.jpg" alt="">
-                    <h2>Book Title: The Great Gatsby</h2>
-                    <p><strong>Author:</strong> F. Scott Fitzgerald</p>
-                    <p><strong>Genre:</strong> Fiction</p>
+        <body>
+            <div id="book-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <div id="modal-book-content"></div>
                 </div>
-
-                <section class="book-details">
-                    <div class="summary">
-                        <h3>Summary</h3>
-                        <p>The Great Gatsby is a novel about the American dream, love, and social class in the Roaring Twenties.</p>
+            </div>
+        
+            <div class="page-container">
+                <div class="book-list">
+                    <!-- Book 1 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book1.jpg" alt="">
+                            <h2>Book Title: The Great Gatsby</h2>
+                            <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                            <p><strong>Genre:</strong> Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>The Great Gatsby is a novel about the American dream, love, and social class in the Roaring Twenties.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>This book is a literary masterpiece, with beautiful writing, complex characters, and a tragic story that captivates readers.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A must-read for anyone interested in exploring themes of wealth, love, and morality in a deeply symbolic way.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
                     </div>
-
-                    <div class="review">
-                        <h3>Review</h3>
-                        <p>This book is a literary masterpiece, with beautiful writing, complex characters, and a tragic story that captivates readers.</p>
+        
+                    <!-- Book 2 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book2.jpg" alt="">
+                            <h2>Book Title: 1984</h2>
+                            <p><strong>Author:</strong> George Orwell</p>
+                            <p><strong>Genre:</strong> Dystopian Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>1984 is a political novel about totalitarianism, surveillance, and the loss of individual freedom.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>The novel presents a chilling dystopian future where the government controls every aspect of life, leaving readers questioning the balance of power and freedom.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A powerful and thought-provoking book that remains relevant today in discussions of privacy and government control.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
                     </div>
-
-                    <div class="final-thoughts">
-                        <h3>Final Thoughts</h3>
-                        <p>A must-read for anyone interested in exploring themes of wealth, love, and morality in a deeply symbolic way.</p>
+        
+                    <!-- Book 3 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book3.jpg" alt="">
+                            <h2>Book Title: To Kill a Mockingbird</h2>
+                            <p><strong>Author:</strong> Harper Lee</p>
+                            <p><strong>Genre:</strong> Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>Set in the Depression-era South, the book explores themes of racial injustice, the loss of innocence, and moral growth.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>The novel’s portrayal of the deep-seated prejudices in American society makes it an incredibly powerful read. The characters are compelling and real.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>To Kill a Mockingbird is a moving and unforgettable story, with valuable lessons about courage and justice. A must-read for all ages.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
                     </div>
-                </section>
-
-                <section class="rating-section">
-                    <h3>Rate this Book:</h3>
-                    <div class="rating-stars">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
+        
+                    <!-- Book 4 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book4.jpg" alt="">
+                            <h2>Book Title: Pride and Prejudice</h2>
+                            <p><strong>Author:</strong> Jane Austen</p>
+                            <p><strong>Genre:</strong> Classic Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>Pride and Prejudice follows Elizabeth Bennet as she navigates societal expectations, romance, and her own prejudices.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>The wit and sharp dialogue make this a charming and insightful read. The evolving relationship between Elizabeth and Darcy is brilliant.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>One of the most beloved works in English literature, offering timeless lessons on love, family, and societal expectations.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
                     </div>
-                    <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
-                </section>
+        
+                    <!-- Book 5 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book5.jpg" alt="">
+                            <h2>Book Title: Moby-Dick</h2>
+                            <p><strong>Author:</strong> Herman Melville</p>
+                            <p><strong>Genre:</strong> Adventure Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>A sailor named Ishmael recounts his voyage on the whaling ship Pequod, captained by the obsessed Ahab, who hunts the legendary white whale Moby-Dick.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>Melville's novel is a masterwork of symbolism and philosophical insight, though its length and detailed chapters can feel daunting to some readers.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A dense but rewarding novel that raises questions about fate, obsession, and the human spirit.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
+                    </div>
+        
+                    <!-- Book 6 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book6.jpg" alt="">
+                            <h2>Book Title: The Catcher in the Rye</h2>
+                            <p><strong>Author:</strong> J.D. Salinger</p>
+                            <p><strong>Genre:</strong> Coming-of-Age Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>The novel tells the story of Holden Caulfield, a disillusioned teenager who struggles with his place in the world after the death of his brother.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>Holden’s raw and honest voice captures the confusion of adolescence, but his alienation can make it a tough read for some.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A seminal work on youth and rebellion, though not for everyone due to its heavy themes of mental illness and isolation.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
+                    </div>
+        
+                    <!-- Book 8 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book7.jpg" alt="">
+                            <h2>Book Title: Brave New World</h2>
+                            <p><strong>Author:</strong> Aldous Huxley</p>
+                            <p><strong>Genre:</strong> Dystopian Fiction</p>
+                            
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>Brave New World is set in a futuristic society where humans are bred and conditioned for specific roles, and free will is abolished.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>Huxley's novel raises important questions about technology, conformity, and individual freedom in a controlled society.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A chilling and thought-provoking dystopian novel that remains relevant to today's world.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
+                    </div>
+        
+                    <!-- Book 9 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book8.jpg" alt="">
+                            <h2>Book Title: The Odyssey</h2>
+                            <p><strong>Author:</strong> Homer</p>
+                            <p><strong>Genre:</strong> Epic Poetry</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>The Odyssey tells the epic journey of Odysseus as he tries to return home after the Trojan War, facing numerous obstacles along the way.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>An unforgettable tale of adventure, heroism, and perseverance, with timeless themes of loyalty and cleverness.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A classic work of literature that has inspired countless other stories of epic journeys and trials.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
+                    </div>
+        
+                    <!-- Book 10 -->
+                    <div class="book-item">
+                        <div class="book-header">
+                            <img src="img/book9.jpg" alt="">
+                            <h2>Book Title: War and Peace</h2>
+                            <p><strong>Author:</strong> Leo Tolstoy</p>
+                            <p><strong>Genre:</strong> Historical Fiction</p>
+                        </div>
+        
+                        <section class="book-details">
+                            <div class="summary">
+                                <h3>Summary</h3>
+                                <p>War and Peace follows several noble families during the Napoleonic Wars, weaving together their personal and historical struggles.</p>
+                            </div>
+        
+                            <div class="review">
+                                <h3>Review</h3>
+                                <p>With a grand scale and deep philosophical exploration, Tolstoy’s masterpiece captures both the grandeur and the human aspects of war and peace.</p>
+                            </div>
+        
+                            <div class="final-thoughts">
+                                <h3>Final Thoughts</h3>
+                                <p>A monumental work of historical fiction, combining political drama with profound insights into the human condition.</p>
+                            </div>
+                        </section>
+        
+                        <section class="rating-section">
+                            <h3>Rate this Book:</h3>
+                            <div class="rating-stars">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                        </section>
+                    </div>
+                </div>
             </div>
 
+<<<<<<< Updated upstream
             <!-- Book 2 -->
             <div class="book-item">
                 <div class="book-header">
@@ -384,6 +709,9 @@
                
                 </section>
             </div>
+=======
+        
+>>>>>>> Stashed changes
         </div>
     </div>
 
