@@ -535,7 +535,19 @@ body {
     border-radius: 50%;
   }
 
+  .rating-stars {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: gold;
+}
 
+.rating-stars span {
+    padding: 5px;
+}
+
+.rating-stars span.selected {
+    color: #FFD700;
+}
 
 
 
