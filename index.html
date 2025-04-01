@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Reviews</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="page-container">
         <header class="main-header">
@@ -13,7 +15,11 @@
                 <h1>Book Reviews</h1>
                 <p>Explore reviews for some amazing books!</p>
             </div>
-            <button class="toggle-button" id="toggle-button">🌙</button>
+            <!-- Dark Mode Toggle -->
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
         </header>
 
         <div class="book-list">
@@ -250,9 +256,128 @@
                     <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
                 </section>
             </div>
+
+            <!-- Book 8 -->
+            <div class="book-item">
+                <div class="book-header">
+                    <img src="img/book7.jpg" alt="">
+                    <h2>Book Title: Brave New World</h2>
+                    <p><strong>Author:</strong> Aldous Huxley</p>
+                    <p><strong>Genre:</strong> Dystopian Fiction</p>
+                    
+                </div>
+
+                <section class="book-details">
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>Brave New World is set in a futuristic society where humans are bred and conditioned for specific roles, and free will is abolished.</p>
+                    </div>
+
+                    <div class="review">
+                        <h3>Review</h3>
+                        <p>Huxley's novel raises important questions about technology, conformity, and individual freedom in a controlled society.</p>
+                    </div>
+
+                    <div class="final-thoughts">
+                        <h3>Final Thoughts</h3>
+                        <p>A chilling and thought-provoking dystopian novel that remains relevant to today's world.</p>
+                    </div>
+                </section>
+
+                <section class="rating-section">
+                    <h3>Rate this Book:</h3>
+                    <div class="rating-stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                </section>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="book-item">
+                <div class="book-header">
+                    <img src="img/book8.jpg" alt="">
+                    <h2>Book Title: The Odyssey</h2>
+                    <p><strong>Author:</strong> Homer</p>
+                    <p><strong>Genre:</strong> Epic Poetry</p>
+                </div>
+
+                <section class="book-details">
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>The Odyssey tells the epic journey of Odysseus as he tries to return home after the Trojan War, facing numerous obstacles along the way.</p>
+                    </div>
+
+                    <div class="review">
+                        <h3>Review</h3>
+                        <p>An unforgettable tale of adventure, heroism, and perseverance, with timeless themes of loyalty and cleverness.</p>
+                    </div>
+
+                    <div class="final-thoughts">
+                        <h3>Final Thoughts</h3>
+                        <p>A classic work of literature that has inspired countless other stories of epic journeys and trials.</p>
+                    </div>
+                </section>
+
+                <section class="rating-section">
+                    <h3>Rate this Book:</h3>
+                    <div class="rating-stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                </section>
+            </div>
+
+            <!-- Book 10 -->
+            <div class="book-item">
+                <div class="book-header">
+                    <img src="img/book10.jpg" alt="">
+                    <h2>Book Title: War and Peace</h2>
+                    <p><strong>Author:</strong> Leo Tolstoy</p>
+                    <p><strong>Genre:</strong> Historical Fiction</p>
+                </div>
+
+                <section class="book-details">
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>War and Peace follows several noble families during the Napoleonic Wars, weaving together their personal and historical struggles.</p>
+                    </div>
+
+                    <div class="review">
+                        <h3>Review</h3>
+                        <p>With a grand scale and deep philosophical exploration, Tolstoy’s masterpiece captures both the grandeur and the human aspects of war and peace.</p>
+                    </div>
+
+                    <div class="final-thoughts">
+                        <h3>Final Thoughts</h3>
+                        <p>A monumental work of historical fiction, combining political drama with profound insights into the human condition.</p>
+                    </div>
+                </section>
+
+                <section class="rating-section">
+                    <h3>Rate this Book:</h3>
+                    <div class="rating-stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
+                </section>
+            </div>
         </div>
     </div>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
