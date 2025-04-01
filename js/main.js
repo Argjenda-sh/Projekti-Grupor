@@ -18,6 +18,23 @@ darkModeToggle.addEventListener('change', () => {
     }
 });
 
+document.querySelectorAll('.rating-stars').forEach(starContainer => {
+    const stars = starContainer.querySelectorAll('.star');
+    const ratingDisplay = starContainer.nextElementSibling.querySelector('.rating-display');
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const rating = star.getAttribute('data-value');
+            ratingDisplay.textContent = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+            stars.forEach(s => s.classList.remove('selected')); // Remove selected class from all stars
+            stars.forEach(s => {
+                if (s.getAttribute('data-value') <= rating) {
+                    s.classList.add('selected');
+                }
+            });
+        });
+    });
+});
 
 function searchBooks() {
     const searchQuery = document.getElementById("search-bar").value.toLowerCase();
