@@ -617,6 +617,124 @@ p {
 }
 
 
-a {
-    font-family: 'Roboto', sans-serif;
-}
+
+
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Set default font to Poppins */
+  }
+  
+
+  body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f7f7f7;
+  }
+  
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif; 
+    font-weight: 700; 
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  
+  
+  p {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1.5em;
+  }
+  
+ 
+  a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  
+  button, input[type="submit"], input[type="button"] {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  blockquote {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #000000;
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin: 1em 0;
+  }
+  
+
+  ul, ol {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin: 1em 0;
+  }
+  
+  li {
+    margin: 0.5em 0;
+  }
+  
+ 
+  table {
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+
+  input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ 
+  code, pre {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d6336c;
+  }
+  
+  
+  .custom-class {
+    font-family: 'Merriweather', serif; 
+    font-weight: 700;
+    color: #000000;
+  }
+  
