@@ -10,7 +10,6 @@
 
 <body>
 
-<!-- Add this right after the header, before the book-list -->
 <div class="search-container">
     <input type="text" id="search-bar" placeholder="Search for books by title..." oninput="searchBooks()">
     <button id="search-btn">🔍</button>
@@ -23,7 +22,7 @@
                 <h1>Book Reviews</h1>
                 <p>Explore reviews for some amazing books!</p>
             </div>
-            <!-- Dark Mode Toggle -->
+
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider round"></span>
@@ -31,8 +30,9 @@
         </header>
 
         <div class="book-list">
-            <!-- Book 1 -->
-            <div class="book-item">
+
+ 
+            <div class="book-item" onclick="openBookModal('gatsby')">
                 <div class="book-header">
                     <img src="img/book1.jpg" alt="">
                     <h2>Book Title: The Great Gatsby</h2>
@@ -70,8 +70,8 @@
                 </section>
             </div>
 
-            <!-- Book 2 -->
-            <div class="book-item">
+          
+            <div class="book-item" onclick="openBookModal('1984')">
                 <div class="book-header">
                     <img src="img/book2.jpg" alt="">
                     <h2>Book Title: 1984</h2>
@@ -109,8 +109,8 @@
                 </section>
             </div>
 
-            <!-- Book 3 -->
-            <div class="book-item">
+          
+            <div class="book-item" onclick="openBookModal('mockingbird')">
                 <div class="book-header">
                     <img src="img/book3.jpg" alt="">
                     <h2>Book Title: To Kill a Mockingbird</h2>
@@ -148,8 +148,8 @@
                 </section>
             </div>
 
-            <!-- Book 4 -->
-            <div class="book-item">
+       
+            <div class="book-item" onclick="openBookModal('pride')">
                 <div class="book-header">
                     <img src="img/book4.jpg" alt="">
                     <h2>Book Title: Pride and Prejudice</h2>
@@ -187,13 +187,12 @@
                 </section>
             </div>
 
-            <!-- Book 5 -->
-            <div class="book-item">
+            <div class="book-item" onclick="openBookModal('moby')">
                 <div class="book-header">
                     <img src="img/book5.jpg" alt="">
                     <h2>Book Title: Moby-Dick</h2>
                     <p><strong>Author:</strong> Herman Melville</p>
-                    <p><strong>Genre:</strong> Adventure Fiction</p>
+                    <p><strong>Genre:</strong> Adventure</p>
                 </div>
 
                 <section class="book-details">
@@ -226,8 +225,7 @@
                 </section>
             </div>
 
-            <!-- Book 6 -->
-            <div class="book-item">
+            <div class="book-item" onclick="openBookModal('rye')">
                 <div class="book-header">
                     <img src="img/book6.jpg" alt="">
                     <h2>Book Title: The Catcher in the Rye</h2>
@@ -264,15 +262,14 @@
                     <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
                 </section>
             </div>
-
-            <!-- Book 8 -->
-            <div class="book-item">
+ 
+            <div class="book-item" onclick="openBookModal('world')">
                 <div class="book-header">
                     <img src="img/book7.jpg" alt="">
                     <h2>Book Title: Brave New World</h2>
                     <p><strong>Author:</strong> Aldous Huxley</p>
                     <p><strong>Genre:</strong> Dystopian Fiction</p>
-                    
+                     
                 </div>
 
                 <section class="book-details">
@@ -305,8 +302,7 @@
                 </section>
             </div>
 
-            <!-- Book 9 -->
-            <div class="book-item">
+            <div class="book-item" onclick="openBookModal('odyssey')">
                 <div class="book-header">
                     <img src="img/book8.jpg" alt="">
                     <h2>Book Title: The Odyssey</h2>
@@ -344,9 +340,9 @@
                 </section>
             </div>
 
-            <!-- Book 10 -->
+
             <div class="book-item">
-                <div class="book-header">
+                <div class="book-header" onclick="openBookModal('war')"> 
                     <img src="img/book9.jpg" alt="">
                     <h2>Book Title: War and Peace</h2>
                     <p><strong>Author:</strong> Leo Tolstoy</p>
@@ -382,8 +378,20 @@
                     <p>Your Rating: <span class="rating-display">☆☆☆☆☆</span></p>
                 </section>
             </div>
+                </div>  
         </div>
     </div>
+
+
+<div id="book-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeBookModal()">&times;</span>
+        <div id="modal-book-content">
+
+        </div>
+    </div>
+</div>
+
 
     <script src="js/main.js"></script>
 </body>
