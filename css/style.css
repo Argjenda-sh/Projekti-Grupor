@@ -738,3 +738,7 @@ p {
     color: #000000;
   }
   
+.author{
+    color: #81c784;
+    display: inline-block;
+}
