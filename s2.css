@@ -1,0 +1,13 @@
+.counter-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* space between counters */
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .counter {
+    font-size: 3rem;
+    min-width: 100px;
+  }
+  
