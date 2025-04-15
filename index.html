@@ -7,23 +7,36 @@
     <title>Book Reviews</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .counter {
-            font-size: 50px;
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-            width: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: none; /* Initially hidden */
+        .counter-section {
+          display: flex;
+          justify-content: center;
+          gap: 50px;
+          padding: 80px 20px;
+          background: #222;
+          color: #fff;
+          text-align: center;
+          opacity: 0;
+          transform: translateY(50px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
         }
-    </style>
+      
+        .counter-section.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      
+        .counter {
+          font-size: 2.5rem;
+          font-weight: bold;
+          min-width: 100px;
+        }
+      
+        .label {
+          font-size: 1rem;
+          margin-top: 10px;
+          color: #ccc;
+        }
+      </style>
 </head>
 
 <body>
@@ -400,47 +413,62 @@
 </div>
 
 <!-- Scroll number counter -->
-<div class="counter" id="scroll-counter">0</div>
-
-<div id="book-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeBookModal()">&times;</span>
-        <div id="modal-book-content"></div>
+<div class="counter-section">
+    <div>
+        <div class="counter" data-target="1500">0</div>
+        <div class="label">Total Reviews</div>
+    </div>
+    <div>
+        <div class="counter" data-target="3200">0</div>
+        <div class="label">Books Added</div>
+    </div>
+    <div>
+        <div class="counter" data-target="760">0</div>
+        <div class="label">Active Readers</div>
     </div>
 </div>
 
+
+
 <script>
-    // Get the counter element
-    const counter = document.getElementById("scroll-counter");
+    const counters = document.querySelectorAll('.counter-section .counter');
+    const counterSection = document.querySelector('.counter-section');
+    let hasAnimated = false;
+  
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const speed = 200;
+      const increment = target / speed;
+  
+      const updateCount = () => {
+        const current = +counter.innerText;
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          requestAnimationFrame(updateCount);
+        } else {
+          counter.innerText = target;
+        }
+      };
+  
+      updateCount();
+    };
+  
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+  
+      if (scrollTop + windowHeight >= docHeight - 10 && !hasAnimated) {
+        counterSection.classList.add('visible');
+        counters.forEach(counter => animateCounter(counter));
+        hasAnimated = true;
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  </script>
 
-    // Function to animate the number when it scrolls into view
-    const targetNumber = 500; // Set the target number you want to animate to
 
-    // Intersection Observer to detect when the counter is in view
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                counter.style.display = 'block'; // Show the counter
-                animateCounter();
-                observer.disconnect(); // Stop observing after animation starts
-            }
-        });
-    }, { threshold: 0.5 }); // Trigger when 50% of the counter is in the viewport
-
-    observer.observe(counter);
-
-    function animateCounter() {
-        let currentNumber = 0;
-        const interval = setInterval(() => {
-            if (currentNumber >= targetNumber) {
-                clearInterval(interval);
-            } else {
-                currentNumber++;
-                counter.textContent = currentNumber;
-            }
-        }, 10); // Adjust the speed of the animation by modifying this value
-    }
-</script>
 
 <script src="js/main.js"></script>
 
