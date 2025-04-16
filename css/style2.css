@@ -1,0 +1,115 @@
+body{
+    background-color: #121212;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    color: #81c784;
+    padding-left: 50px;
+    font-size: 2rem;
+}
+.img{
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   border-radius: 50%;
+}
+
+.text{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    border-left: 30px;
+}
+
+
+.life_text{
+    font-size: 30px;
+    color: #81c784;
+}
+
+
+.childhood_text{
+    color: white;
+    font-size: 20px;
+}
+
+
+.information{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    border-left: 30px;
+}
+
+.author_kid{
+    width: 200px;
+   height: 200px;
+   float: left;
+}
+
+
+.house{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+.topnav {
+    background-color: #333;
+    border-radius: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 0px;
+    margin: 10px;    
+  }
+
+.topnav a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 50px;
+    display: inline;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+
+
+
+  .about_text{
+    font-size: 30px;
+    color: #81c784;
+  }
+
+  .name_text{
+    color: white;
+    font-size: 20px;
+  }
+
+
+  .great_gatsby{
+        font-size: 30px;
+        color: #81c784;
+      
+  }
+
+  .questions{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    border-left: 30px;
+  }
+
